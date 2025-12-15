@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafta 12: JavaScript Uygulamaları</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <header>
+            <h1><span class="js-badge">JS</span>Hafta 12: JavaScript Uygulamaları</h1>
+            <div class="subtitle">Matematiksel Fonksiyonlar ve DOM Manipülasyonu</div>
+        </header>
+
+        <div class="container">
+            
+            <div class="card">
+                <h3>🔢 Hesaplama İşlemi</h3>
+                
+                <div class="input-group">
+                    <div class="input-box">
+                        <label>1. Sayı</label>
+                        <input type="number" id="sayi1" value="21">
+                    </div>
+                    <div class="input-box">
+                        <label>2. Sayı</label>
+                        <input type="number" id="sayi2" value="92">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="btn-blue" onclick="hesapla('+')">Topla (+)</button>
+                    <button class="btn-red" onclick="hesapla('-')">Çıkar (-)</button>
+                    <button class="btn-yellow" onclick="hesapla('*')">Çarp (*)</button>
+                    <button class="btn-cyan" onclick="hesapla('/')">Böl (/)</button>
+                </div>
+
+                <div class="result-box" id="sonucKutusu">
+                    İşlem Sonucu: 
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🛒 Ürün Listesi</h3>
+                
+                <div class="product-header product-row">
+                    <span>Ürün Adı</span>
+                    <span>Birim Fiyat (TL)</span>
+                </div>
+
+                <div class="product-row">
+                    <span>🍎 Elma</span>
+                    <span class="fiyat">12</span>
+                </div>
+
+                <div class="product-row">
+                    <span>🍌 Muz</span>
+                    <span class="fiyat">25</span>
+                </div>
+
+                <button class="btn-green" onclick="sepetiHesapla()" id="sepetButonu">Toplam Sepet Tutarını Hesapla</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
